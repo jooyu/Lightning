@@ -1,9 +1,0 @@
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\tools\SlotBasedCounterTest.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\bolt\RollingCountBoltTest.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\tools\SlidingWindowCounterTest.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\tools\NthLastModifiedTimeTrackerTest.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\tools\RankingsTest.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\bolt\TotalRankingsBoltTest.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\bolt\IntermediateRankingsBoltTest.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\tools\MockTupleHelpers.java
-D:\apache-storm-1.0.1\examples\mytest\test\jvm\storm\starter\tools\RankableObjectWithFieldsTest.java
