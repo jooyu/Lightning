@@ -1,0 +1,10 @@
+{
+"@source":"file://logServer/var/log/auth.log",
+"@tags":[],
+"@fields":{},
+"@timestamp":"2013-01-04T11:09:16.171Z",
+"@source_host":"logServer",
+"@source_path":"/var/log/auth.log",
+"@message":"Jan  4 11:08:04 logServer sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/usr/bin/nano shipper.conf",
+"@type":"syslog"
+}

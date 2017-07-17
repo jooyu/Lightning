@@ -1,0 +1,35 @@
+package storm.cookbook.log.rules
+
+import storm.cookbook.log.model.LogEntry;
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+
+rule "Host Correction"
+
+    when
+        l: LogEntry(sourceHost == "localhost")
+    then
+        l.setSourceHost("localhost.example.com");
+
+end
+
+rule "Filter By Type"
+    when
+        l: LogEntry(type != "syslog")
+    then
+        l.setFilter(true);
+end
+
+rule "Extract Fields"
+	salience 100//run later
+	when
+		l: LogEntry(filter != true)
+	then
+		String logEntryPattern = "^([\\d.]+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(.+?)\" (\\d{3}) (\\d+) \"([^\"]+)\" \"([^\"]+)\"";
+		Matcher matcher = Pattern.compile(logEntryPattern).matcher(l.getMessage());
+		if(matcher.find()){
+			l.addField("_pid",matcher.group(1));
+			l.addField("_src",matcher.group(2));
+		}
+end
