@@ -11,6 +11,12 @@ import redis.clients.jedis.Jedis;
 
 import java.util.Map;
 
+/**
+ * 
+ * @author yujoo
+ * 去除重复访问
+ *
+ */
 public class RepeatVisitBolt extends BaseRichBolt {
 
     private OutputCollector collector;

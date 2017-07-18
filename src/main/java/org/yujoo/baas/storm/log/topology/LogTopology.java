@@ -27,11 +27,11 @@ public class LogTopology {
 		builder.setBolt("counter", new VolumeCountingBolt(), 10).shuffleGrouping("logRules");
 //		CassandraCounterBatchingBolt logPersistenceBolt = new CassandraCounterBatchingBolt(
 //				Conf.COUNT_CF_NAME, VolumeCountingBolt.FIELD_ROW_KEY, VolumeCountingBolt.FIELD_INCREMENT );
-		CassandraBatchingBolt logPersistenceBolt = new CassandraBatchingBolt(
-				Conf.COUNT_CF_NAME, VolumeCountingBolt.FIELD_ROW_KEY );
-		logPersistenceBolt.setAckStrategy(AckStrategy.ACK_ON_RECEIVE);
-		builder.setBolt("countPersistor", logPersistenceBolt, 10)
-				.shuffleGrouping("counter");
+//		CassandraBatchingBolt logPersistenceBolt = new CassandraBatchingBolt(
+//				Conf.COUNT_CF_NAME, VolumeCountingBolt.FIELD_ROW_KEY );
+//		logPersistenceBolt.setAckStrategy(AckStrategy.ACK_ON_RECEIVE);
+//		builder.setBolt("countPersistor", logPersistenceBolt, 10)
+//				.shuffleGrouping("counter");
 
 		// Maybe add:
 		// Stem and stop word counting per file

@@ -1,4 +1,4 @@
-package org.yujoo.baas.storm.web;
+package org.yujoo.baas.storm.click.web;
 
 import org.mortbay.jetty.Handler;
 import org.mortbay.jetty.Server;

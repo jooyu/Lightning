@@ -1,4 +1,4 @@
-package org.yujoo.baas.storm.web;
+package org.yujoo.baas.storm.click.web;
 
 import org.json.simple.JSONObject;
 import redis.clients.jedis.Jedis;
@@ -19,7 +19,8 @@ import java.io.PrintWriter;
  */
 public class ClickServlet extends HttpServlet
 {
-    Jedis jedis = new Jedis("localhost");
+    Jedis jedis = new Jedis("192.168.141.119",6379);
+    
     @Override
     protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException
     {
@@ -27,7 +28,7 @@ public class ClickServlet extends HttpServlet
         content.put("ip" ,httpServletRequest.getParameter("ip"));
         content.put("url" ,httpServletRequest.getParameter("url"));
         content.put("clientKey" ,httpServletRequest.getParameter("clientKey"));
-
+        jedis.auth("123456");
         jedis.rpush("count", content.toJSONString());
 
         httpServletResponse.setContentType("text/plain");

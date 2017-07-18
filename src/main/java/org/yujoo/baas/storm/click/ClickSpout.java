@@ -53,12 +53,14 @@ public class ClickSpout extends BaseRichSpout {
 
     @Override
     public void nextTuple() {
+    	//从redis取出数据队列数据
         String content = jedis.rpop("count");
         if(content==null || "nil".equals(content)) {
             try { Thread.sleep(300); } catch (InterruptedException e) {}
         } else {
             JSONObject obj=(JSONObject) JSONValue.parse(content);
             String ip = obj.get(org.yujoo.baas.storm.click.Fields.IP).toString();
+           System.out.println();
             String url = obj.get(org.yujoo.baas.storm.click.Fields.URL).toString();
             String clientKey = obj.get(org.yujoo.baas.storm.click.Fields.CLIENT_KEY).toString();
             collector.emit(new Values(ip,url,clientKey));

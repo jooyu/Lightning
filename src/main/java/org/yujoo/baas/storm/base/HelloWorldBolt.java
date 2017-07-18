@@ -25,6 +25,10 @@ public class HelloWorldBolt extends BaseRichBolt {
 			OutputCollector collector) {
 	}
 
+	/**
+	 * storm的基本数据结构tuple
+	 */
+	
 	@Override
 	public void execute(Tuple input) {
 		String test = input.getStringByField("sentence");

@@ -15,14 +15,14 @@ public class HttpIPResolver implements IPResolver, Serializable {
 
 
     static String url =
-            "http://www.ip138.com/ips138.asp";
+            "http://apis.map.qq.com/ws/location/v1/ip";
 
     @Override
     public JSONObject resolveIP(String ip) {
         URL geoUrl = null;
         BufferedReader in = null;
         try {
-            geoUrl = new URL(url + "?ip=" + ip+"&action=2");
+            geoUrl = new URL(url + "?ip=" + ip+"&key=56GBZ-FDGWJ-KBYF5-FEX3L-FQECH-W6BCB");
             URLConnection connection = geoUrl.openConnection();
             in = new BufferedReader(
                     new InputStreamReader(

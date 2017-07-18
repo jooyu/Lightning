@@ -1,0 +1,550 @@
+2017-07-18 10:47:40,557 ERROR mortbay.log (Slf4jLog.java:warn(87)) - /
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:134)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:69)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:79)
+	at redis.clients.jedis.BinaryClient.rpush(BinaryClient.java:266)
+	at redis.clients.jedis.Client.rpush(Client.java:193)
+	at redis.clients.jedis.Jedis.rpush(Jedis.java:872)
+	at org.yujoo.baas.storm.web.ClickServlet.doGet(ClickServlet.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:129)
+	... 21 more
+2017-07-18 10:47:41,660 ERROR mortbay.log (Slf4jLog.java:warn(87)) - /favicon.ico
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:134)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:69)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:79)
+	at redis.clients.jedis.BinaryClient.rpush(BinaryClient.java:266)
+	at redis.clients.jedis.Client.rpush(Client.java:193)
+	at redis.clients.jedis.Jedis.rpush(Jedis.java:872)
+	at org.yujoo.baas.storm.web.ClickServlet.doGet(ClickServlet.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:129)
+	... 21 more
+2017-07-18 10:51:13,970 ERROR mortbay.log (Slf4jLog.java:warn(87)) - /
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:134)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:69)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:79)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:75)
+	at redis.clients.jedis.BinaryClient.auth(BinaryClient.java:499)
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1963)
+	at org.yujoo.baas.storm.web.ClickServlet.doGet(ClickServlet.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:129)
+	... 21 more
+2017-07-18 10:51:15,038 ERROR mortbay.log (Slf4jLog.java:warn(87)) - /favicon.ico
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:134)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:69)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:79)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:75)
+	at redis.clients.jedis.BinaryClient.auth(BinaryClient.java:499)
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1963)
+	at org.yujoo.baas.storm.web.ClickServlet.doGet(ClickServlet.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:129)
+	... 21 more
+2017-07-18 11:02:03,166 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:46)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:02:03,171 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:46)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:03:20,423 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:46)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:81)
+	... 6 more
+2017-07-18 11:03:20,430 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:46)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:81)
+	... 6 more
+2017-07-18 11:06:56,196 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:81)
+	... 6 more
+2017-07-18 11:06:56,202 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:81)
+	... 6 more
+2017-07-18 11:10:26,474 WARN  server.NIOServerCnxn (NIOServerCnxn.java:doIO(634)) - EndOfStreamException: Unable to read additional data from client sessionid 0x15d53acda6e000a, likely client has closed socket
+2017-07-18 11:10:27,262 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,265 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,266 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,268 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,292 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,293 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,294 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,295 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,297 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,298 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,297 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,299 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,316 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,316 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,323 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 11:10:27,325 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.RuntimeException: java.lang.NullPointerException
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:84)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:55)
+	at backtype.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:56)
+	at backtype.storm.disruptor$consume_loop_STAR_$fn__1597.invoke(disruptor.clj:67)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.GeographyBolt.execute(GeographyBolt.java:47)
+	at backtype.storm.daemon.executor$fn__4036$tuple_action_fn__4037.invoke(executor.clj:504)
+	at backtype.storm.daemon.executor$mk_task_receiver$fn__3967.invoke(executor.clj:314)
+	at backtype.storm.disruptor$clojure_handler$reify__1585.onEvent(disruptor.clj:43)
+	at backtype.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:76)
+	... 6 more
+2017-07-18 15:14:24,624 WARN  server.NIOServerCnxn (NIOServerCnxn.java:doIO(634)) - EndOfStreamException: Unable to read additional data from client sessionid 0x15d548c3d920002, likely client has closed socket
+2017-07-18 15:14:45,430 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-18 15:14:45,433 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-18 15:14:45,452 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-18 15:14:45,453 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-18 15:15:19,365 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-18 15:15:19,371 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-18 15:15:19,401 ERROR storm.util (NO_SOURCE_FILE:invoke(0)) - Async loop died!
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-18 15:15:19,402 ERROR daemon.executor (NO_SOURCE_FILE:invoke(0)) - 
+java.lang.NullPointerException
+	at org.yujoo.baas.storm.click.ClickSpout.nextTuple(ClickSpout.java:61)
+	at backtype.storm.daemon.executor$fn__3976$fn__4017$fn__4018.invoke(executor.clj:447)
+	at backtype.storm.util$async_loop$fn__465.invoke(util.clj:377)
+	at clojure.lang.AFn.run(AFn.java:24)
+	at java.lang.Thread.run(Unknown Source)

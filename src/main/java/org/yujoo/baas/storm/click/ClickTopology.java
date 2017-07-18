@@ -9,6 +9,12 @@ import backtype.storm.topology.TopologyBuilder;
 import backtype.storm.tuple.Fields;
 import backtype.storm.utils.Utils;
 
+/***
+ * 去重接口被点击的
+ * @author eaves.zhu
+ *
+ */
+
 public class ClickTopology {
 
     private TopologyBuilder builder = new TopologyBuilder();
@@ -75,8 +81,6 @@ public class ClickTopology {
 	public static void main(String[] args) throws Exception {
 
         ClickTopology topology = new ClickTopology();
-        
-
         if(args!=null && args.length > 1) {
             topology.runCluster(args[0], args[1]);
         } else {

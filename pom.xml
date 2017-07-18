@@ -39,6 +39,7 @@
     <version>2.6.0-RC2</version>
     <scope>test</scope>
 </dependency>
+
 	
 		<dependency>
 			<groupId>junit</groupId>
@@ -111,15 +112,12 @@
         	<artifactId>drools-compiler</artifactId>
         	<version>5.5.0.Final</version>
     	</dependency>
+
     </dependencies>
 
 	<build>
 		<plugins>
-		    <!-- 
-		    bind the maven-assembly-plugin to the package phase
-		    this will create a jar file without the storm dependencies
-		    suitable for deployment to a cluster.
-		     -->
+		  
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
@@ -176,8 +174,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 		</plugins>

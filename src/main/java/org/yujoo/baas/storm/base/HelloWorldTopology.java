@@ -32,8 +32,8 @@ public class HelloWorldTopology {
             LocalCluster cluster = new LocalCluster();
             cluster.submitTopology("test", conf, builder.createTopology());
             Utils.sleep(10000);
-            cluster.killTopology("test");
-            cluster.shutdown();    
+//            cluster.killTopology("test");
+//            cluster.shutdown();    
         }
 
 	}

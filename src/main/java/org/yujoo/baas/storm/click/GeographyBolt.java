@@ -39,7 +39,8 @@ public class GeographyBolt extends BaseRichBolt {
 
     @Override
     public void execute(Tuple tuple) {
-    	System.out.println("111"+org.yujoo.baas.storm.click.Fields.IP);
+    	System.out.println("tuple:"+tuple.toString());
+    	System.out.println("IP:"+org.yujoo.baas.storm.click.Fields.IP);
         String ip = tuple.getStringByField(org.yujoo.baas.storm.click.Fields.IP);
         JSONObject json = resolver.resolveIP(ip);
         System.out.println("***"+json+"***");
